@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的书签管理器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 我的书签管理器</h1>
+            <div class="theme-switcher">
+                <button id="themeToggle">切换主题</button>
+            </div>
+        </header>
+
+        <div class="controls">
+            <div class="add-section">
+                <input type="text" id="bookmarkName" placeholder="书签名称">
+                <input type="text" id="bookmarkUrl" placeholder="网址 (https://...)">
+                <select id="bookmarkCategory">
+                    <option value="">选择分类</option>
+                </select>
+                <button id="addBookmark">添加书签</button>
+            </div>
+            <div class="category-management">
+                <input type="text" id="newCategory" placeholder="新分类名称">
+                <button id="addCategory">添加分类</button>
+            </div>
+        </div>
+
+        <div class="categories" id="categoriesContainer">
+            <!-- 分类将通过JavaScript动态生成 -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
