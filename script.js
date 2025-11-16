@@ -27,6 +27,8 @@ class BookmarkManager {
         if (this.bookmarks.length === 0) {
             const defaultBookmarks = [
                 { name: "GitHub", url: "https://github.com", category: "开发" },
+                { name: "yandex", url: "https://yandex.com", category: "搜索" },
+                { name: "秘塔搜索", url: "https://metaso.cn/", category: "搜索" },
                 { name: "Stack Overflow", url: "https://stackoverflow.com", category: "开发" },
                 { name: "MDN Web Docs", url: "https://developer.mozilla.org", category: "开发" },
                 { name: "BBC News", url: "https://www.bbc.com/news", category: "新闻" },
@@ -51,7 +53,7 @@ class BookmarkManager {
                 }
             });
 
-            const defaultCategories = ["开发", "新闻", "视频", "AI工具", "设计", "其他"];
+            const defaultCategories = ["搜索","开发", "新闻", "视频", "AI工具", "设计", "游戏","小说和漫画","其他"];
             defaultCategories.forEach(cat => {
                 if (!this.categories.includes(cat)) {
                     this.categories.push(cat);
